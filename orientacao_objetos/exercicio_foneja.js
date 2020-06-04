@@ -1,3 +1,38 @@
+// 	CLIENTE1:
+
+// 	Nome: Dora Barreto
+// 	CPF: 223.001.221-29
+// Data da compra: '11/09/2019'
+// 	Valor da compra: R$ 2.000,00
+// 	Modelo do celular: 'XXX-12'
+// 	Ano do celular: 2020
+// 	Cor do celular: Amarelo
+// 	Loja: RJ-BR
+// 	Atendente: Joana Maria
+
+// 	CLIENTE 2:
+
+// 	Nome: Marcela Janino Silva
+// 	CPF: 321.101.231-29
+// Data da compra: '11/09/2019'
+// 	Valor da compra: R$ 1.300,00
+// 	Modelo do celular: XXM-y
+// 	Ano do celular: 2019
+// 	Cor do celular: ROXO
+// 	Loja: SP-BR
+// 	Atendente: Drielly Gomes Almeida
+
+// 	CLIENTE 3:
+
+// 	Nome: Raquel Borges Figueredo
+// 	CPF: 910.311.425-01
+// 	Valor da compra: R$ 4.000,00
+// 	Modelo do celular: MDM-PRO
+// 	Ano do celular: 2020
+// 	Cor do celular: AZUL
+// 	Loja: MG-BR
+// 	Atendente: Fran Carneiro de Pinha
+
 class Cliente {
   constructor(
     nome,
@@ -20,12 +55,14 @@ class Cliente {
     this.nomeAtendente = nomeAtendente;
   }
   descontar() {
+    //com if ternário
     const desconto =
       this.valor < 1500
         ? "yass, você ganhou desconto de 10%"
         : "sorry, no discounts for you";
     return desconto;
 
+    //com condição em bloco
     //  if (this.valor < 1500){
     //      return 'yass, você ganhou desconto de 10%'
     //  } else {
@@ -87,37 +124,3 @@ console.log("terá desconto?", cliente3.descontar());
 console.log("tem essa cor?", cliente3.verificarCor());
 console.log("---------------------");
 
-// 	CLIENTE1:
-
-// 	Nome: Dora Barreto
-// 	CPF: 223.001.221-29
-// Data da compra: '11/09/2019'
-// 	Valor da compra: R$ 2.000,00
-// 	Modelo do celular: 'XXX-12'
-// 	Ano do celular: 2020
-// 	Cor do celular: Amarelo
-// 	Loja: RJ-BR
-// 	Atendente: Joana Maria
-
-// 	CLIENTE 2:
-
-// 	Nome: Marcela Janino Silva
-// 	CPF: 321.101.231-29
-// Data da compra: '11/09/2019'
-// 	Valor da compra: R$ 1.300,00
-// 	Modelo do celular: XXM-y
-// 	Ano do celular: 2019
-// 	Cor do celular: ROXO
-// 	Loja: SP-BR
-// 	Atendente: Drielly Gomes Almeida
-
-// 	CLIENTE 3:
-
-// 	Nome: Raquel Borges Figueredo
-// 	CPF: 910.311.425-01
-// 	Valor da compra: R$ 4.000,00
-// 	Modelo do celular: MDM-PRO
-// 	Ano do celular: 2020
-// 	Cor do celular: AZUL
-// 	Loja: MG-BR
-// 	Atendente: Fran Carneiro de Pinha
