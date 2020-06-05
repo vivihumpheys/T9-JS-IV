@@ -1,4 +1,4 @@
-class Conta {
+export class Conta {
     constructor (nome, cpf) {
         this.nome = nome;
         this.cpf = cpf;
